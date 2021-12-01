@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wendy's closet</title>
+    <link rel="stylesheet" href="{% static '/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'css/custom.css'%}">
+ 
+
+</head>
+<body class="bg-gray-100">
+    {%include 'header.html'%}
+    <div class="min-h-screen">
+        {%block content%}
+        
+        {%endblock%}
+    </div>
+  
+
+    {%include "footer.html"%}
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="shadow-md rounded-md ">Top</button>
+    <script src="{% static 'js/main.js'%}"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+      
+</body>
+</html>
